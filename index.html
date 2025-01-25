@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículum Vitae - Martín Andrade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            font-size: 2.5em;
+            font-weight: 600;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .whatsapp-button {
+            background-color: #25D366; /* Color verde de WhatsApp */
+            color: white;
+            font-size: 1.2em;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Color verde oscuro de WhatsApp */
+        }
+
+        .section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.6em;
+            color: #0056b3;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .info-value {
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Imagen de perfil */
+        .profile-pic {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border: 4px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Currículum Vitae</h1>
+
+        <button class="button" onclick="cambiarIdioma()">Cambiar a Inglés</button>
+
+        <div class="profile-pic">
+            <img src="ft.jpg" alt="Foto de Martín Andrade">
+        </div>
+
+        <div class="section">
+            <div class="section-title" id="section-personal">Datos Personales</div>
+            <div class="info-row">
+                <div class="info-label" id="label-name">Nombre:</div>
+                <div class="info-value" id="value-name">Martín Esteban Andrade Carrera</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label" id="label-age">Edad:</div>
+                <div class="info-value" id="value-age">18 años</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title" id="section-profile">Perfil</div>
+            <p id="profile-text">Soy un estudiante de Ciencia de Datos con conocimientos en desarrollo de páginas web y Python. Manejo inglés a un nivel intermedio y tengo una gran capacidad de adaptación y perseverancia...</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title" id="section-education">Formación Académica</div>
+            <div class="info-row">
+                <div class="info-label" id="label-university">Universidad:</div>
+                <div class="info-value" id="value-university">Pontificia Universidad Católica del Ecuador (PUCE)</div>
+            </div>
+            <div class="info-row">
+                <div class="info-label" id="label-career">Carrera:</div>
+                <div class="info-value" id="value-career">Ciencia de Datos (Primer semestre)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title" id="section-skills">Habilidades y Conocimientos</div>
+            <ul id="skills-list">
+                <li>Desarrollo web (nivel básico)</li>
+                <li>Programación en Python</li>
+                <li>Análisis de datos</li>
+                <li>Manejo intermedio del inglés</li>
+                <li>Multitareas y organización</li>
+                <li>Perseverancia y disciplina</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="section-title" id="section-sport-experience">Experiencia Deportiva</div>
+            <ul id="sport-list">
+                <li>Cinturón negro en karate</li>
+                <li>Campeón nacional de karate</li>
+                <li>Exintegrante de la selección provincial</li>
+                <li>Sensei de Karate do</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p id="footer-contact">Correo Electrónico: <a href="mailto:ma1643595@gmail.com">ma1643595@gmail.com</a></p>
+            <p id="whatsapp-contact">
+                <a href="https://wa.me/593984658978" target="_blank" class="whatsapp-button">Escríbeme por WhatsApp</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        let isEnglish = false;
+
+        function cambiarIdioma() {
+            isEnglish = !isEnglish;
+
+            // Cambiar texto
+            document.getElementById("title").innerText = isEnglish ? "Curriculum Vitae" : "Currículum Vitae";
+            document.getElementById("section-personal").innerText = isEnglish ? "Personal Information" : "Datos Personales";
+            document.getElementById("label-name").innerText = isEnglish ? "Name:" : "Nombre:";
+            document.getElementById("value-name").innerText = isEnglish ? "Martin Esteban Andrade Carrera" : "Martín Esteban Andrade Carrera";
+            document.getElementById("label-age").innerText = isEnglish ? "Age:" : "Edad:";
+            document.getElementById("value-age").innerText = isEnglish ? "18 years" : "18 años";
+            document.getElementById("section-profile").innerText = isEnglish ? "Profile" : "Perfil";
+            document.getElementById("profile-text").innerText = isEnglish ? "I am a Data Science student with knowledge in web page development and Python. I have an intermediate level of English and have great adaptability and perseverance..." : "Soy un estudiante de Ciencia de Datos con conocimientos en desarrollo de páginas web y Python. Manejo inglés a un nivel intermedio y tengo una gran capacidad de adaptación y perseverancia...";
+            document.getElementById("section-education").innerText = isEnglish ? "Academic Background" : "Formación Académica";
+            document.getElementById("label-university").innerText = isEnglish ? "University:" : "Universidad:";
+            document.getElementById("value-university").innerText = isEnglish ? "Pontifical Catholic University of Ecuador (PUCE)" : "Pontificia Universidad Católica del Ecuador (PUCE)";
+            document.getElementById("label-career").innerText = isEnglish ? "Career:" : "Carrera:";
+            document.getElementById("value-career").innerText = isEnglish ? "Data Science (First semester)" : "Ciencia de Datos (Primer semestre)";
+            document.getElementById("section-skills").innerText = isEnglish ? "Skills and Knowledge" : "Habilidades y Conocimientos";
+            document.getElementById("skills-list").innerHTML = isEnglish ? 
+                "<li>Web Development (basic level)</li><li>Python Programming</li><li>Data Analysis</li><li>Intermediate English</li><li>Multitasking and Organization</li><li>Perseverance and Discipline</li>" : 
+                "<li>Desarrollo web (nivel básico)</li><li>Programación en Python</li><li>Análisis de datos</li><li>Manejo intermedio del inglés</li><li>Multitareas y organización</li><li>Perseverancia y disciplina</li>";
+            document.getElementById("section-sport-experience").innerText = isEnglish ? "Sport Experience" : "Experiencia Deportiva";
+            document.getElementById("sport-list").innerHTML = isEnglish ? 
+                "<li>Black Belt in Karate</li><li>National Karate Champion</li><li>Former member of the provincial team</li><li>Karate Sensei</li>" : 
+                "<li>Cinturón negro en karate</li><li>Campeón nacional de karate</li><li>Exintegrante de la selección provincial</li><li>Sensei de Karate do</li>";
+            document.getElementById("footer-contact").innerHTML = isEnglish ? 'Email: <a href="mailto:ma1643595@gmail.com">ma1643595@gmail.com</a>' : 'Correo Electrónico: <a href="mailto:ma1643595@gmail.com">ma1643595@gmail.com</a>';
+            document.getElementById("whatsapp-contact").innerHTML = isEnglish ? 
+                '<a href="https://wa.me/593984658978" target="_blank" class="whatsapp-button">Message me on WhatsApp</a>' : 
+                '<a href="https://wa.me/593984658978" target="_blank" class="whatsapp-button">Escríbeme por WhatsApp</a>';
+        }
+    </script>
+</body>
+</html>
